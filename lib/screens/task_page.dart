@@ -42,7 +42,6 @@ class _TaskPageState extends State<TaskPage> {
         numbers: 14),
     Change(
         icon: Icon(
-          
           Icons.book,
           color: Colors.pink,
         ),
@@ -81,6 +80,9 @@ class _TaskPageState extends State<TaskPage> {
           mainAxisSpacing: 15,
         ),
         itemBuilder: (context, index) => InkWell(
+          onTap: () {
+            Navigator.pushNamed(context, 'tasks');
+          },
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Container(
@@ -100,14 +102,13 @@ class _TaskPageState extends State<TaskPage> {
                   children: [
                     items[index].icon,
                     Padding(
-                      padding: const EdgeInsets.only(top:80),
+                      padding: const EdgeInsets.only(top: 80),
                       child: Text(
                         items[index].title,
-                        style: TextStyle(fontWeight: FontWeight.bold,
-                          color: Colors.black,
-                          fontSize: 20
-                          
-                        ),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                            fontSize: 20),
                       ),
                     ),
                     Text('4 Tasks'),
