@@ -1,18 +1,17 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:todo_list_db/screens/add_task_page.dart';
-import 'package:todo_list_db/screens/all_tasks.dart';
-import 'package:todo_list_db/screens/task_page.dart';
 
+import 'package:flutter/material.dart';
+import 'package:todo_list_db/screens/home_page.dart';
+import 'package:todo_list_db/screens/login_page.dart';
 void main() {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: 'open',
+      initialRoute: 'home',
       routes: {
-        'addTask': (context) => MyApp(),
-        'open': (context) => TaskPage(),
-        'tasks': (context) => AllTask(),
+        
+        'home': (context) => HomePage(),
+        // 'tasks': (context) => PageAll(),
+        'login':(context) => LoginPage(),
       },
     ),
   );
