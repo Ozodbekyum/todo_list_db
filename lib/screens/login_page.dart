@@ -25,10 +25,10 @@ class _LoginPageState extends State<LoginPage> {
         ),
         child: Column(
           children: [
-         const   SizedBox(
+            const SizedBox(
               height: 200,
             ),
-          const   Center(
+            const Center(
               child: Text(
                 ' Welcome \n      to \n Learning',
                 style: TextStyle(
@@ -37,7 +37,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
             ),
-         const    SizedBox(
+            const SizedBox(
               height: 150,
             ),
             TextButton(
