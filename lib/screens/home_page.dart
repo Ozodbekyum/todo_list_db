@@ -126,6 +126,23 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 70,
+              ),
+              Row(
+                children: [
+                  Text(
+                    '  New User?',
+                    style: TextStyle(fontSize: 17),
+                  ),
+                  TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        'Sign up',
+                        style: TextStyle(fontSize: 17),
+                      ))
+                ],
+              )
             ],
           ),
         ),
