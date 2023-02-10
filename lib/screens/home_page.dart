@@ -29,10 +29,10 @@ class _HomePageState extends State<HomePage> {
           ),
           child: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 180,
               ),
-              Text(
+              const Text(
                 'Welcome\n    Back',
                 style: TextStyle(
                   fontSize: 40,
@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
                   fontWeight: FontWeight.w600,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 60,
               ),
               Container(
@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
                     }
                   },
                   decoration: InputDecoration(
-                    prefixIcon: Icon(
+                    prefixIcon: const Icon(
                       Icons.person,
                       color: Colors.grey,
                     ),
@@ -64,17 +64,17 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
               Container(
                 width: 250,
                 child: TextFormField(
-                   validator: (value) => value!.isEmpty
+                  validator: (value) => value!.isEmpty
                       ? 'password must be at least 8 characters'
                       : null,
                   decoration: InputDecoration(
-                    prefixIcon: Icon(
+                    prefixIcon: const Icon(
                       Icons.key,
                       color: Colors.grey,
                     ),
@@ -84,7 +84,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               TextButton(
