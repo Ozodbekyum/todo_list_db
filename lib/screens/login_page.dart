@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_list_db/screens/home_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -14,7 +15,7 @@ class _LoginPageState extends State<LoginPage> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             fit: BoxFit.fill,
             image: AssetImage(
@@ -24,10 +25,10 @@ class _LoginPageState extends State<LoginPage> {
         ),
         child: Column(
           children: [
-            SizedBox(
+         const   SizedBox(
               height: 200,
             ),
-            Center(
+          const   Center(
               child: Text(
                 ' Welcome \n      to \n Learning',
                 style: TextStyle(
@@ -36,12 +37,16 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
             ),
-            SizedBox(
+         const    SizedBox(
               height: 150,
             ),
             TextButton(
               onPressed: () {
-                Navigator.pushNamed(context, 'home');
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => HomePage(),
+                    ));
               },
               child: Container(
                 width: 200,
