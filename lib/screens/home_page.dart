@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
+import 'package:todo_list_db/services/service.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
                 width: 250,
                 child: TextFormField(
                   validator: (value) {
-                    if (value != 'Ozodbek') {
+                    if (value != addTask('','')) {
                       return 'incorrect username';
                     } else {
                       return null;
@@ -136,7 +136,9 @@ class _HomePageState extends State<HomePage> {
                     style: TextStyle(fontSize: 17),
                   ),
                   TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, 'signup');
+                      },
                       child: Text(
                         'Sign up',
                         style: TextStyle(fontSize: 17),
