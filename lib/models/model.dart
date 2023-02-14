@@ -6,7 +6,8 @@ class Change {
   int numbers;
 
   Change({
-    required this.icon, 
-    required this.numbers, 
-    required this.title});
+    required this.icon,
+    required this.numbers,
+    required this.title,
+  });
 }

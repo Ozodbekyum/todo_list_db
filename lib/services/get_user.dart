@@ -3,8 +3,8 @@ import 'dart:convert';
 
 import '../models/todo.dart';
 
-Future addTask(String pass,String user) async {
-  Uri url = Uri.parse('https://diyorbekmajidov.pythonanywhere.com/createuser/');
+Future getTask(String pass,String user) async {
+  Uri url = Uri.parse('https://diyorbekmajidov.pythonanywhere.com/get/');
 
   // var data = jsonEncode(todo.toJson());
   

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo_list_db/services/service.dart';
+import 'package:todo_list_db/services/create_user.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key});
@@ -79,7 +79,7 @@ class _SignUpState extends State<SignUp> {
             ),
             TextButton(
               onPressed: () async {
-                await addTask(pass.text,user.text);
+                await createTask(pass.text,user.text);
                 Navigator.pushNamed(context, 'tasks');
               },
               child: Container(

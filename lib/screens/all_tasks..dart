@@ -12,42 +12,42 @@ class TaskPage extends StatefulWidget {
 class _TaskPageState extends State<TaskPage> {
   final List<Change> items = [
     Change(
-        icon: Icon(
+        icon:const Icon(
           Icons.document_scanner,
           color: Colors.blue,
         ),
         title: 'All',
         numbers: 14),
     Change(
-        icon: Icon(
+        icon:const Icon(
           Icons.work,
           color: Colors.orange,
         ),
         title: 'Work',
         numbers: 14),
     Change(
-        icon: Icon(
+        icon:const Icon(
           Icons.music_note,
           color: Colors.orange,
         ),
         title: 'Music',
         numbers: 14),
     Change(
-        icon: Icon(
+        icon:const Icon(
           Icons.travel_explore,
           color: Colors.green,
         ),
         title: 'Travel',
         numbers: 14),
     Change(
-        icon: Icon(
+        icon: const Icon(
           Icons.book,
           color: Colors.pink,
         ),
         title: 'Study',
         numbers: 14),
     Change(
-        icon: Icon(
+        icon: const Icon(
           Icons.home,
           color: Colors.orange,
         ),
@@ -75,14 +75,14 @@ class _TaskPageState extends State<TaskPage> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+        const  Text(
             '  Lists',
             style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
           ),
           Expanded(
             child: GridView.builder(
               itemCount: items.length,
-              gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
                 maxCrossAxisExtent: 200,
                 crossAxisSpacing: 15,
                 mainAxisSpacing: 15,
@@ -94,7 +94,7 @@ class _TaskPageState extends State<TaskPage> {
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
-                    decoration: BoxDecoration(
+                    decoration:const BoxDecoration(
                       color: Colors.white,
                       boxShadow: [
                         BoxShadow(
@@ -113,13 +113,13 @@ class _TaskPageState extends State<TaskPage> {
                             padding: const EdgeInsets.only(top: 80),
                             child: Text(
                               items[index].title,
-                              style: TextStyle(
+                              style:const TextStyle(
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black,
                                   fontSize: 20),
                             ),
                           ),
-                          Text('4 Tasks'),
+                         const Text('4 Tasks'),
                         ],
                       ),
                     ),
