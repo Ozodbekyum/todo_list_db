@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
                 width: 250,
                 child: TextFormField(
                   validator: (value) {
-                    if (value != createTask('','')) {
+                    if (value != '') {
                       return 'incorrect username';
                     } else {
                       return null;
@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   final form = keyForm.currentState;
                   if (form!.validate()) {
-                    Navigator.pushNamed(context, 'home');
+                    Navigator.pushNamed(context, 'tasks');
                   }
                 },
                 child: Container(

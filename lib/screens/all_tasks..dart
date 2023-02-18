@@ -77,7 +77,10 @@ class _TaskPageState extends State<TaskPage> {
         children: [
           const Text(
             '  Lists',
-            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+            style: TextStyle(
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+            ),
           ),
           Expanded(
             child: GridView.builder(
@@ -110,7 +113,7 @@ class _TaskPageState extends State<TaskPage> {
                         children: [
                           items[index].icon,
                           Padding(
-                            padding: const EdgeInsets.only(top: 80),
+                            padding: const EdgeInsets.only(top: 50),
                             child: Text(
                               items[index].title,
                               style: const TextStyle(
