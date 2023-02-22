@@ -113,7 +113,7 @@ class _TaskPageState extends State<TaskPage> {
                         children: [
                           items[index].icon,
                           Padding(
-                            padding: const EdgeInsets.only(top: 50),
+                            padding: const EdgeInsets.only(top: 30),
                             child: Text(
                               items[index].title,
                               style: const TextStyle(
